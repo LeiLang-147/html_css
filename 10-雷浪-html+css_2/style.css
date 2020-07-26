@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 54px;
+    position: relative;
+}
+
+header .all{
+    width: 179px;
+    height: 54px;
+    float: left;
+    background-color: #CF1132;
+    text-align: center;
+}
+
+header .all .all-cont{
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    display: none;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.all:hover .all-cont{
+    display: block;
+    height: 500px;
+}
+
+.all-cont .contaner{
+    width: 1260px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.all-cont .contaner ul{
+    list-style: none;
+    float: left;
+}
+
+
+.all-cont .contaner ul li{
+    width: 100px;
+    height: 30px;
+}
+
+.all-cont .contaner ul li a{
+    color: black;
+    font-size: 12px;
+}
+
+ .li1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.all-cont .contaner .li1 a{
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color:  #CF1132;
+}
+
+.all-cont .contaner .ul2,
+.all-cont .contaner .ul4,
+.all-cont .contaner .ul5,
+.all-cont .contaner .ul6,
+.all-cont .contaner .ul7,
+.all-cont .contaner .ul8{
+    margin-top: 70PX;
+}
+
+.all-cont .contaner .ul2,
+.all-cont .contaner .ul8{
+    width: 200px;
+}
+
+
+
+
+
+.all-cont .contaner .ul1 .li2,
+.all-cont .contaner .ul2 .li2,
+.all-cont .contaner .ul3 .li2,
+.all-cont .contaner .ul4 .li2{
+    font-weight: bold;
+}
+
+.more{
+    width: 30px;
+    height: 110px;
+    padding-top: 10px;
+    background-color:  #CF1132;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 250px;
+    transform: translateY(-50%);
+}
+
+header .all .iconfont{
+    font-size: 30px;
+}
+
+header .all p{
+    display: block;
+    line-height: 54px;
+   color: #fff;
+   font-size: 10px;
+}
+
+header .all span{
+    vertical-align: bottom;
+}
+
+header .news{
+    width: 420px;
+    height: 54px;
+    background-image: url(img/headerNews.jpg);
+    float: left;
+    position: relative;
+}
+
+header .news .news-cont{
+    width: 960px;
+    height: 250px;
+    background-image: url(img/news.jpg);
+    position: absolute;
+    left: 0;
+    top: 54px;
+    z-index: 999;
+    display: none;
+}
+
+.news:hover .news-cont{
+    display: block;
+}
+
+header .logo{
+    width: 133px;
+    height: 44px;
+    margin-top: 5px;
+    float: left;
+    background-image: url(img/logo.png);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .right{
+    width: 138px;
+    height: 54px;
+    border-left: 1px solid #DADCE0;
+    float: right;text-align: center;
+}
+
+header .right a{
+    font-size: 14px;
+    width: 138px;
+    height: 54px;
+    line-height: 54px;
+    color: black;
+}
+
+header .right:hover{
+    background-color: silver;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    margin-top: 1px;
+    background-image: url(img/nav-back.jpg);
+    position: relative;
+}
+
+nav ul{
+    width: 1200px;
+    height: 60px;
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+nav ul li{
+    width: 90.766px;
+    height: 60px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-image: url(img/nav_bg.jpg);
+}
+nav ul li:hover .line{
+    opacity: 0;
+}
+
+nav ul .guanwnag{
+    background-image: url(img/nav_bg.jpg);
+}
+
+nav ul li a{
+    display: block;
+    width: 88px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    float: left;
+}
+
+nav ul .guanwnag a{
+    color: black;
+}
+
+nav ul li .line{
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    float: right;
+    margin-right: -1px;
+    margin-top: 24px;
+}
+
+nav ul li:hover .line{
+    background-color: #C2A060;
+}
+
+nav .search{
+    width: 160px;
+    height: 27px;
+    margin-right: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-bottom: 1px solid #C2A060;
+}
+
+nav .search input{
+    width: 130px;
+    float: left;
+    margin-top: 8px;
+    background:transparent;
+    color: #fff;
+    background-color: none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+input::-webkit-input-placeholder {
+	color: #B1B1B1;
+}
+
+nav .search a{
+    color: #C2A060;
+    font-weight: bold;
+}
+
+nav .search span{
+    float: right;
+    width: 23px;
+    height: 23px;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 5px;
+    font-size: 23px;
+    transform-style: preserve-3d;
+    transition: 0.5s; 
+}
+
+nav .search span:hover{
+    transform: rotateY(180deg);
+}
+
+.container{
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/container-back.jpg);
+    background-repeat: no-repeat; 
+}
+
+.wrap{
+    width: 100%;
+    height: 140px;
+    background-image: url(img/back.jpg);
+    position: absolute;
+    top: 54px;
+    left: 0;
+    display: none;
+}
+.zixun:hover .wrap,.shishenlu:hover .wrap,.gonglue:hover .wrap,.shequ:hover .wrap,
+.yule:hover .wrap,.shiting:hover .wrap,.qudao:hover .wrap,.yuyue:hover .wrap{
+    display: block;
+}
+
+.wrap ul{
+    list-style: none;
+    height: 100%;
+}
+.wrap ul li{
+    width: 150px;
+    height: 92px;
+    float: left;
+    margin: 0 10px;
+    margin-top: 30px;
+    position: relative;
+}
+.wrap ul li img{
+    width: 150px;
+    height: 92px;
+    border: 1px solid black;
+}
+.wrap ul li span{
+    padding: 2px 3px;
+    background-color: #C2A060;
+    line-height: 18px;
+    text-align: center;
+}
+.zixun-cont ul{
+    width: 850px;
+}
+.zixun-cont ul li span{
+    font-weight: 40px;
+    color: #fff;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.zixun-cont ul li p{
+    position: absolute;
+    bottom: 2px;
+    color: #fff;
+    padding: 0 6px;
+    width: 100%;
+    height: 20px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.shishenlu-cont ul{
+    width: 1190px;
+}
+.shishenlu-cont ul li span{
+    font-weight: bold;
+    color: black;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.gonglue-cont ul{
+    width: 680px;
+}
+.gonglue-cont ul li span{
+    font-weight: bold;
+    color: black;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.shequ ul{
+    width: 964px;
+}
+.shequ ul li{
+    width: 216px;
+    height: 88px;
+    text-align: left;
+    position: relative;
+}
+.shequ ul li img{
+    width: 216px;
+    height: 88px;
+}
+.shequ ul li p{
+    line-height: 10px;
+    color: #a78442;
+    width: 200px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.shequ ul li h6,.shequ ul li h1{
+    font-weight: normal;
+}
+.shequ ul .last-li{
+    margin-left: 0;
+    border-left: 2px solid #a78442;
+}
+
+.shequ ul .last-li h1,.shequ ul .last-li h6{
+    margin-left: 25px;
+}
+.shequ-cont a{
+    color: black;
+    width: 60px;
+    height: auto;
+}
+
+.yule-cont ul{
+    width: 1190px;
+}
+.yule-cont ul li span{
+    font-weight: bold;
+    color: black;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.shiting-cont ul{
+    width: 510px;
+}
+.shiting-cont ul li span{
+    font-weight: bold;
+    color: black;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.qudao-cont ul{
+    width: 1120px;
+}
+.qudao-cont ul li a{
+    width: 81px;
+    height: 81px;
+}
+.qudao-cont ul li a img{
+    width: 81px;
+    height: auto;
+    border: none;
+}
+.qudao-cont ul li span{
+    color: black;
+    width: auto;
+}
+.qudao-cont ul li .span1{
+    position: absolute;
+    left: 10px;
+    bottom: -5px;
+}
+.qudao-cont ul li .span2{
+    position: absolute;
+    left: 8px;
+    bottom: -3px;
+}
+.qudao-cont ul li .span3{
+    position: absolute;
+    left: 9px;
+    bottom: -13px;
+}
+.qudao-cont ul .last-li{
+    background:none;
+    width: 245px;
+    height: 92px;
+    border-left: 2px solid #a78442;
+}
+.qudao-cont ul .last-li .qun{
+    width: 160px;
+    height: 100%;
+    float: right;
+    text-align: left;
+}
+.qudao-cont ul .last-li .qun p{
+    font-size: 12px;
+}
+
+.yuyue-cont ul{
+    width: 1200px;
+    height: 140px;
+}
+.yuyue-cont ul li{
+    width: 216px;
+    height: 98px;
+    margin-top: 20px;
+}
+.yuyue-cont ul li img{
+    width: 216px;
+    height: 88px;
+}
+.yuyue-cont ul li .span1{
+    color: black;
+    width: 216px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.yuyue-cont ul li .span2{
+    color: black;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}

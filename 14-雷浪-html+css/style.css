@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 顶部灰色横条 */
+.header_top{
+    width: 100%;
+    height: 32px;
+    background-color: #E3E4E5;
+}
+
+/* 白色头部位置 */
+.header{
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff;
+}
+
+/* 定义一个居中的盒子 */
+.center{
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 头部左边logo */
+.left_logo{
+    width: 190px;
+    height: 120px;
+    position: relative;
+}
+
+.logo{
+    opacity: 1;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    
+}
+
+.left_logo:hover .logo{
+    opacity: 0; 
+}
+
+.logo_change{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(img/logo1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 134px 120px;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.left_logo:hover .logo_change{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 头部中间盒子 */
+.center_massage{
+    width: 790px;
+    height: 140px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 中间顶部 */
+.search_bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* 搜索框 */
+.search{
+    width: 550px;
+    height: 40px;
+    display: flex;
+    border: 2px solid #E1251B;
+    position: relative;
+}
+
+.search>a>i{
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+}
+
+.iconcamera_icon{
+    font-size: 18px;
+    font-weight: bold;
+    color: #989898;
+}
+
+.search>a>i:hover{
+    color: #E1251B;
+}
+
+.search input{
+    width: 490px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.search input::placeholder{
+    color: #989898;
+}
+
+.search span{
+    display: block;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    background-color: #E1251B;
+}
+
+.search span .iconsousuo{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.search span:hover{
+    background-color: #C81522;
+}
+
+/* 购物车 */
+.car{
+    width: 132px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    margin-left: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #E1251B;
+    font-size: 14px;
+    position: relative;
+}
+
+.car:hover{
+    border: 1px solid red;
+}
+
+.icongouwuche{
+    font-weight: bold;
+}
+
+/* 购物车图标上面的数字 */
+.num{
+    width: 18px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: #eeeeee;
+    background-color: #E1251B;
+    position: absolute;
+    top: 5px;
+    left: 27px;
+}
+
+/* 头部中间的中部，搜索康下边的小字部分*/
+.info_bar{
+    width: 100%;
+    height: 30px;
+}
+
+.info{
+    width: 550px;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.info a{
+    display: block;
+    width: auto;
+    width: auto;
+    color: #999999;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.info a:hover{
+    color: #E1251B;
+}
+
+.info .first{
+    color: #E1251B;
+}
+
+/* 头部中间底部，导航栏 */
+.nav_bar{
+    width: 100%;
+    height: 50px;
+}
+
+.nav_bar a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    float: left;
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+.a_bold{
+    color: #E1251B;
+    font-weight: bold;
+}
+
+.nav_bar a:hover{
+    color: #E1251B;
+}
+
+/* 头部右边广告部分 */
+.right_ad{
+    width: 190px;
+    height: 120px;
+    background-image: url(img/ad.png);
+}
+
+/* 主体盒子 */
+.content{
+    width: 100%;
+    height: 900px;
+    margin-top: 10px;
+    background-image: url(img/body_back.png);
+    background-repeat: no-repeat;
+}
+
+/* 居中盒子 */
+.content .center{
+    width: 1190px;
+    height: 470px;
+    background-color: #ffffff;
+}
+
+
+/* body右上方的图片 */
+.top_right{
+    width: 90px;
+    height: 200px;
+    background-image: url(img/right_top_nack.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* body右上方的图片下边的竖条 */
+.right_rectangle{
+    width: 6px;
+    height: 1000px;
+    background-color: #7A6E6E;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}

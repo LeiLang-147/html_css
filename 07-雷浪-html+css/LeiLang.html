@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingdong_login</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .img1{
+            float: left;
+            margin-top: 10px;
+        }
+        .header p{
+            margin-top: 40px;
+            margin-left: 10px;
+            color: #696969;
+            font-size: 25px;
+            float: left;
+        }
+        .img2{
+            margin-top: 65px;
+            float: right;
+        }
+        .pre1{
+            margin-top: 65px;
+            margin-left: 5px;
+            float: right;
+        }
+        .header_ques{
+            color: #999999;
+            text-decoration: none;
+        }
+        .header_ques:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .info{
+            width: 100%;
+            height: 50px;
+            background-color: #FFF8F0;
+            vertical-align: middle;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .info_img{
+            vertical-align: middle;
+        }
+        .info_pre{
+            color: #999999;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .login_a{
+            color: black;
+            text-decoration: none;
+        }
+        .login_a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .login{
+            width: 100%;
+            height: 477px;
+            background-color: #26184B;
+        }
+        .login_center{
+            margin: 0 auto;
+            width: 1000px;
+            height: 477px;
+        }
+        .login_left{
+            float: left;
+        }
+        .login_img{
+            width: auto;
+            height: 477px;
+        }
+        .login_right{
+            float: left;
+            width: 350px;
+            height: 440px;
+            margin-top: 15px;
+            background-color: #FFFFFF;
+        }
+        .login_right_top{
+            height: 40px;
+            text-align: center;
+            background-color: #FFF8F0;
+        }
+        .login_right_top_img{
+            vertical-align: middle;
+        }
+        .login_right_top_pre{
+            color: #999999;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .login_right_nav{
+            height: 55px;
+        }
+        .login_right_nav_left{
+            width: 116px;
+            float: left;
+        }
+        .nav_p1{
+            font-size: 20px;
+            color: red;
+            text-align: right;
+        }
+        .nav_a1{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login_right_nav_center{
+            width: 116px;
+            float: left;
+        }
+        .nav_p2{
+            color: #F4F4F4;
+            font-size: 20px;
+            text-align: center;
+        }
+        .login_right_nav_right{
+            width: 116px;
+            float: left;
+        }
+        .nav_p3{
+            font-size: 20px;
+        }
+        .nav_a2{
+            color: black;
+            text-decoration: none;
+        }
+        .nav_a2:hover{
+            color: red;
+            font-weight: bold;
+        }
+        .login_right_hr{
+            margin-top: 10px;
+            color: #F4F4F4;
+            width: 348px;
+        }
+        .login_right_QR{
+            width: 100%;
+            height: 190px;
+            margin: auto;
+            position: relative;
+            text-align: center;
+        }
+        .QR_img1{
+            transition: 0.5s;
+        }
+        .login_right_QR:hover .QR_img1{
+            margin-left: -150px;
+            transition: 0.5s;
+        }
+        .QR_img2{
+            visibility: hidden;
+            position: absolute;
+            left: 200px;
+            top: 0;
+            opacity: 0;
+            transition-delay: 0.3s;
+            transition-property: opacity;
+        }
+        .login_right_QR:hover .QR_img2{
+            visibility: visible;
+            opacity: 1;
+        }
+        .login_right_QR_p{
+            text-align: center;
+        }
+        .login_right_QR_a{
+            color: black;
+            text-decoration: none;
+        }
+        .login_right_gd{
+            width: 350px;
+            height: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .gd_ul_li1{
+            background-image: url(img/7.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            float: left;
+            color: #999999;
+            vertical-align: middle;
+        }
+        .gd_ul_li2{
+            background-image: url(img/8.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            margin-left: 20px;
+            float: left;
+            color: #999999;
+            vertical-align: middle;
+        }
+        .gd_ul_li3{
+            background-image: url(img/9.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            margin-left: 20px;
+            float: left;
+            color: #999999;
+            vertical-align: middle;
+        }
+        .login_right_down{
+            width: 100%;
+            height: 55px;
+            background-color: #FCFCFC;
+        }
+        .login_right_down_left{
+            width: 140px;
+            height: 40px;
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+        }
+        .down_left_img{
+            vertical-align: middle;
+        }
+        .down_left_pre{
+            font-size: 14px;
+            color: gray;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .down_a{
+            text-decoration: none;
+            color: gray;
+        }
+        .down_a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .login_right_down_right{
+            width: 140px;
+            height: 40px;
+            margin-top: 10px;
+            float: right;
+            text-align: center;
+        }
+        .down_right_pre{
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .down_right_img{
+            vertical-align: middle;
+        }
+
+        .login_right_bottom{
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .login_right_bottom_ul{
+            list-style: none;
+            display: inline-block;
+        }
+        .login_right_bottom_ul li{
+            height: 10px;
+            float: left;
+        }
+        .li{
+            width: 30px;
+            color: gray;
+        }
+        .bottom_a{
+            text-decoration: none;
+            color: gray;
+        }
+        .bottom_a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .bottom_p{
+            color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <img class="img1" src="img/1.png" alt="图片">
+        <p>欢迎登陆</p>
+        <pre class="pre1"><a class="header_ques" href="https://surveys.jd.com/index.php?r=survey/index/sid/568245/lang/zh-Hans">登陆页面，调查问卷</a></pre>
+        <img class="img2" src="img/2.png" alt="图片">
+    </div>
+    <div class="info">
+        <img class="info_img"  src="img/3.png" alt="图片" >
+        <pre class="info_pre">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《<a class="login_a" href="https://about.jd.com/privacy/">京东隐私政策</a>》已上线，将更有利于保护您的个人隐私。</pre>
+    </div>
+    <div class="login">
+        <div class="login_center">
+            <div class="login_left">
+                <img class="login_img" src="img/5.png" alt="图片">
+            </div>
+            <div class="login_right">
+                <div class="login_right_top">
+                    <img class="login_right_top_img"  src="img/3.png" alt="图片" >
+                    <pre class="login_right_top_pre">京东不会以任何理由要求您转账汇款，谨防诈骗。</pre>
+                </div>
+                <div class="login_right_nav">
+                    <div class="login_right_nav_left">
+                        <p class="nav_p1"><a class="nav_a1" href="#">扫码登录</a></p>
+                    </div>
+                    <div class="login_right_nav_center">
+                        <p class="nav_p2">|</p>
+                    </div>
+                    <div class="login_right_nav_right">
+                        <p class="nav_p3"><a class="nav_a2" href="#">账户登录</a></p>
+                    </div>
+                </div>
+                <hr class="login_right_hr">
+                <div class="login_right_QR">
+                    <img class="QR_img1" src="img/6.png" alt="图片">
+                    <img class="QR_img2" src="img/13.png" alt="图片">
+                </div>
+                <p class="login_right_QR_p"><a class="login_right_QR_a" href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fpro.jd.com%2Fmall%2Factive%2F6JZ3Egg37Mgyc9ihnapwsuzdamX%2Findex.html%3Fentrance%3Dpc_pzbd%26utm_source%3Dkong%26utm_medium%3Dzssc%26utm_campaign%3Dt_1000027281_100756%26utm_term%3Df56a1ff0-8f4f-4512-9e6d-71f958ca7baf-p_1999-pr_2322-at_100756%26jd_pop%3Df56a1ff0-8f4f-4512-9e6d-71f958ca7baf%26abt%3D0">打开<span style="color: red;">手机京东</span></a>
+                    <span style="color: white;">|</span> 扫描二维码</p>
+                <div class="login_right_gd">
+                    <ul type="none">
+                        <li class="gd_ul_li1">免输入</li>
+                        <li class="gd_ul_li2">更快</li>
+                        <li class="gd_ul_li3">更安全</li>
+                    </ul>
+                </div>
+                <div class="login_right_down">
+                    <div class="login_right_down_left">
+                        <img class="down_left_img" src="img/10.png" alt="图片">
+                        <pre class="down_left_pre"><a class="down_a" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&state=210BEC66A5FB90F32451274752273A29159232019DE8CDED43927DC97D15BDFDD6F6E6B1747F34342F5A0214E807EF3D&client_id=100273020&redirect_uri=https%3A%2F%2Fqq.jd.com%2Fnew%2Fqq%2Fcallback.action%3Fview%3Dnull%26uuid%3D82276dc5a94d4eea943125d6de172244">QQ</a> | </pre>
+                        <img class="down_left_img" src="img/11.png" alt="图片">
+                        <pre class="down_left_pre"><a class="down_a" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx827225356b689e24&state=BA74C301F01284FA73D4A2378FC0C4D3D7E71CA5EC3151217DBA7A03A993222873542673C2573579FFC358D4D45A2268&redirect_uri=https%3A%2F%2Fqq.jd.com%2Fnew%2Fwx%2Fcallback.action%3Fview%3Dnull%26uuid%3D53faff69e7b84cb89ef4626804b26951&response_type=code&scope=snsapi_login#wechat_redirect">微信</a></pre>
+                    </div>
+                    <div class="login_right_down_right">
+                        <img class="down_right_img" src="img/12.png" alt="图片">
+                        <pre class="down_right_pre"><a class="down_a" href="https://reg.jd.com/p/regPage?ignore=1">立即注册</a></pre>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login_right_bottom">
+        <ul class="login_right_bottom_ul" type="none">
+            <li><a class="bottom_a" href="https://about.jd.com/">关于我们</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://about.jd.com/contact">联系我们</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="http://zhaopin.jd.com/home;jsessionid=6C10C961FD4927F310AFD02387CDBBA9.s1">人才招聘</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://lai.jd.com/#/">商家入驻</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://jzt.jd.com/gw/?ReturnUrl=https%3A%2F%2Fjzt.jd.com%2F">广告服务</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://app.jd.com/">手机京东</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://club.jd.com/links.aspx">友情链接</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://union.jd.com/index">销售联盟</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://pro.jd.com/mall/active/3WA2zN8wkwc9fL9TxAJXHh5Nj79u/index.html">京东社区</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://gongyi.jd.com/">京东公益</a></li>
+            <li class="li">|</li>
+            <li><a class="bottom_a" href="https://www.joybuy.com/">Englishi Site</a></li>
+        </ul>
+        <p class="bottom_p">Copyright © 2004-2020  京东JD.com 版权所有</p>
+    </div>
+</body>
+</html>

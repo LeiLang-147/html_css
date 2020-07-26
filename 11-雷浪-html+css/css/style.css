@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(https://dt.res.netease.com/pc/fab/20190826113530/img/third_bg02_f45822c.jpg);
+}
+.header{
+    text-align: center;
+}
+.header img{
+    margin-top: 40px;
+}
+.container{
+    width: 72%;
+    margin: 40px auto;
+}
+.container ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container ul li{
+    width: 347px;
+    height: 218px;
+    margin: 8px;
+    background-image: url(https://dt.res.netease.com/pc/fab/20190826113530/img/giftItem_bg_4720b1a.png);
+    float: left;
+    position: relative;
+}
+.container ul li .img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-image: url(https://dt.res.netease.com/pc/fab/20190826113530/img/fl_bg_98ba86d.png);
+    background-repeat: no-repeat;
+}
+.container ul li .img img{
+    width: 140px;
+    height: 140px;
+    transform: scale(1.6);
+}
+.container ul li .info{
+    width: 150px;
+    height: 88px;
+    position: absolute;
+    top: 50%;
+    left: 170px;
+    transform: translateY(-50%);
+}
+.container ul li .info h3{
+    font-size: 24px;
+    color: #1f4051;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+.container ul li .info p{
+    font-size: 16px;
+    color: #000f1b;
+    line-height: 21px;
+}
+.container ul li .info h3:after {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: #5d80c3;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}

@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    width: 100%;
+    height: 1500px;
+    background-color: #311313;
+    position: relative;
+}
+
+.part1{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+
+}
+
+.part2{
+    position: absolute;
+    left: 15%;
+    top: 500px;
+    transform: translateX(-15%);
+}
+
+.part3{
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    transform: translateX(-50%);
+}
+
+.part4{
+    position: absolute;
+    left: 75%;
+    top: 720px;
+    transform: translateX(-75%);
+}
+
+.part1 img,.part2 img,.part3 img,.part4 img{
+    width: 100%;
+	transition: 0.5s all ease-in-out;
+}
+.part1:hover img,.part2:hover img,.part3:hover img,.part4:hover img{
+    transform: translateY(-25px);
+}

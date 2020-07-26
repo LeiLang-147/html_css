@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box-img"><img src="img/1.jpg"></div>
+        <div class="box-img"><img src="img/2.jpg"></div>
+        <div class="box-img"><img src="img/3.jpg"></div>
+        <div class="box-img"><img src="img/4.jpg"></div>
+        <div class="box-img"><img src="img/5.jpg"></div>
+        <a href="#"><div class="box-left">&lt;</div></a>
+        <a href="#"><div class="box-right">&gt;</div></a>
+        <div class="box-choice">
+            <ul>
+                <li class="btn"></li>
+                <li class="btn"></li>
+                <li class="btn"></li>
+                <li class="btn"></li>
+                <li class="btn"></li>
+            </ul>
+        </div>
+        <div class="box-nav">
+            <ul>
+                <a href="#">
+                    <li class="TV_BOX">
+                        <span class="span-left">手机 电话卡</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">电视 盒子</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">笔记本 显示器 平板</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">家电 插线板</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">出行 穿戴</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">智能 路由器</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">电源 插件</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">健康 儿童</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">耳机 音响</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span class="span-left">生活 箱包</span>
+                        <span class="span-right">&gt;</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+<script type="text/javascript" src="jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //自动播放
+        var f;
+        var index = 0;
+        dingshiqi();
+
+        function dingshiqi(){
+            f = setInterval(function(){
+            if(index == $(".box-img").length-1){
+                index = 0;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+            }else{
+                index++;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+            } 
+            }, 3000)
+        }
+        
+
+        //点击左右切换
+        $(".box-left").click(function(){
+            clearInterval(f);
+            if(index == 0){
+                index = $(".box-img").length-1;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+                dingshiqi();
+            }else{
+                index--;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+                dingshiqi();
+            }
+        })
+        $(".box-right").click(function(){
+            clearInterval(f);
+            if(index == $(".box-img").length-1){
+                index = 0;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+                dingshiqi();
+            }else{
+                index++;
+                $(".box-img").css("opacity","0");
+                $(".box-img").eq(index).css("opacity","1");
+                dingshiqi();
+            }
+        })
+
+
+        //按照图片切换
+         $(".btn").click(function(){
+            clearInterval(f);
+            var count = $(this).index();
+            index = count;
+            $(".box-img").css("opacity","0");
+            $(".box-img").eq(index).css("opacity","1");
+            dingshiqi();
+        })
+
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四个状态</title>
+    <style>
+        .div{
+            width: 435px;
+            height: 400px;
+            background-color: #95a5a6;
+            margin: 100px auto;
+            position: relative;
+        }
+        .div_left{
+            position: absolute;
+            left: 25px;
+            top: 200px;
+            background-color: #a29bfe;
+            width: 180px;
+            height: 150px;
+            float: left;
+        }
+        .div_right{
+            position: absolute;
+            left: 230px;
+            top: 200px;
+            background-color: #a29bfe;
+            width: 180px;
+            height: 150px;
+            float: left;
+        }
+        .btn{
+            margin-top: 30px;
+            margin-left: 20px;
+            background: #026aa7;
+            color: #fff;
+            font-size: 20px;
+            padding: 0.65em 1em;
+            border-radius: 10px;
+            margin-right: 1em;
+            cursor: pointer;
+            border:0;
+            float: left;
+        }
+        .btn2{
+            margin-top: 30px;
+        }
+        .btn1:hover{
+            color: red;
+        }
+        .btn1:active{
+            position: relative;
+            top: 20px;
+        }
+        .btn1:focus{
+            outline: none;
+            position: relative;
+            top: 20px;
+        }
+        .btn2:hover{
+            color: red;
+        }
+        .btn2:active{
+            position: relative;
+            top: 20px;
+        }
+        .btn2:focus{
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <p>1. 普通状态<br>
+            2. hover 鼠标悬停状态 字体颜色改变<br>
+            3. active 点击状态 点击后离当前位置的高度为20px<br>
+            4. focus 取得焦点状态 第一个focus离当前位置高度为20px，第二个没有设置focus，所以会返回点击前的状态</p><br>
+        <div class="div_left">
+            <button class="btn btn1">第一个按钮</button>
+        </div>
+        <div class="div_right">
+            <button class="btn btn2">第二个按钮</button>
+        </div>
+    </div>
+    
+</body>
+</html>
