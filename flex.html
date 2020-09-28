@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .big{
+            width: 1030px;
+            height: 600px;
+            margin: 10px auto;
+            background-color: rgb(105, 110, 110);
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; */
+            /* justify-content: space-evenly; */
+            align-items: flex-end;
+            /* align-content: space-around; */
+        }
+        .small{
+            width: 100px;
+            height:100px;
+            margin: 5px;
+            font-size: 40px;
+            color: #fff;
+            line-height: 100px;
+            text-align: center;
+            background-color: rgb(106, 5, 201);
+        }
+        .small1{
+            line-height: 100px;
+            /* order: -5; */
+            /* flex-grow: 0; */  /* 放大宽度 */
+            /* flex-shrink: 0;  */ /* 缩小宽度 */
+        }
+        .small2{
+            line-height: 100px;
+            /* order: 5; */
+            /* flex-grow: 0.5; */
+        }
+        .small3{
+            line-height: 100px;
+            /* order: -1; */
+            /* flex-grow: 1; */
+        }
+        .small4{
+            line-height: 100px;
+            /* order: 0; */
+            /* flex-grow: 1.5; */
+        }
+        .small5{
+            line-height: 100px;
+            /* order: 7; */
+            /* flex-grow: 2; */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="small small1">1</div>
+        <div class="small small2">2</div>
+        <div class="small small3">3</div>
+        <div class="small small4">4</div>
+        <div class="small small5">5</div>
+        <!-- <div class="small">6</div>
+        <div class="small">7</div>
+        <div class="small">8</div>
+        <div class="small">9</div>
+        <div class="small">10</div>
+        <div class="small">10</div>
+        <div class="small">10</div> -->
+    </div>
+    
+    <!-- ************ -->
+    <!-- flex-direction: row; 横向排列，从左往右 默认属性-->
+    <!-- flex-direction: row-reverse; 横向排列,从右向左排列 -->
+    <!-- flex-direction: column; 竖向排列,从上往下 -->
+    <!-- flex-direction: column-reverse;  竖向排列,从下往上-->
+    
+    <!-- ****** -->
+    <!--flex-wrap: nowrap; 默认属性，父盒子宽度不够也不换行 -->
+    <!-- flex-wrap: wrap; 父盒子宽度不够会换行  换行后两排的话第二排顶部对齐父盒子中心线  三排的话，第二排顶部在父盒子三分之一处 第三排等不在父盒子三分之二处   -->
+    <!-- flex-wrap: wrap-reverse; 从下往上，换行 -->
+
+
+    <!-- flex-flow: row wrap;  flex-direction和flex-wrap复合使用方式 -->
+
+    <!-- ************* -->
+    <!-- justify-content: flex-start;   靠左排列-->
+    <!-- justify-content: flex-end;   靠右排列-->
+    <!-- justify-content: center;   居中爱列-->
+    <!-- justify-content: space-evenly;  -->
+    <!-- justify-content: space-around;  -->
+    <!-- justify-content: space-between;  -->
+
+    <!-- ************** -->
+    <!-- align-items: center;   实现在交叉轴居中 -->
+    <!-- align-items: flex-start;   实现在交叉轴居开始 -->
+    <!-- align-items: flex-end;   实现在交叉轴居结尾 -->
+    <!-- align-items: stretch;  在子盒子不设置高度（宽度)的情况下，拉伸至父盒子高度（宽度） -->
+    <!-- align-items: baseline;  基线对齐 -->
+
+
+    <!--align-content: center; 居中  -->
+    <!--align-content: flex-start; 居顶部  -->
+    <!--align-content: cflex-end; 居底部  -->
+    <!-- align-content: space-between;  换行后分开，一个靠顶部，一个靠底部 -->
+    <!-- align-content: space-around;  换行后，父盒子分为上下两半，分别居中对齐 -->
+
+
+    <!-- align-self: flex-start;  单独控制子盒子的布局 -->
+    <!-- align-self: flex-end;  单独控制子盒子的布局 -->
+    <!-- align-self: center;  单独控制子盒子的布局 -->
+    <!-- order: 0;   属性定义项目的排列顺序，数值越小，排列越靠前 默认值0  设置在子盒子上-->
+    <!-- flex-grow: 0;  宽度放大,每个盒子放大的比例就是剩余宽度乘每个子盒子加的flex-grow总和 分之 自己的flex-grow    设置在子盒子上  --> 
+    <!-- flex-shrink: 0;  宽度缩小-->
+
+</html>

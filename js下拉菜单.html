@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            width: 150px;
+            height: 400px;
+            background-color: #363A45;
+            margin: 100px auto;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .nav-1 .list-1{
+            width: 150px;
+            height: 40px;
+            background-color: #3889D4;
+            list-style: none;
+            margin-bottom: 2px;
+            overflow: hidden;
+            transition: 0.6s;
+        }
+        .nav-1 .list-1 a{
+            display: block;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .nav-2 .list-2{
+            width: 150px;
+            height: 40px;
+            color: #ffffff;
+            line-height: 40px;
+            text-align: center;
+            background-color: #282c3a;
+        }
+        .list-2:hover{
+            background-color: #1acbfc;
+        }
+      /*   .nav-1 .list-1:hover{
+            height: 200px;
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="nav-1">
+            <li class="list-1">
+                <a href="#">HTML+CSS</a>
+                <ul class="nav-2">
+                    <li class="list-2">1</li>
+                    <li class="list-2">2</li>
+                    <li class="list-2">3</li>
+                    <li class="list-2">4</li>
+                </ul>
+            </li>
+            <li class="list-1">
+                <a href="#">HTML+CSS</a>
+                <ul class="nav-2">
+                    <li class="list-2">1</li>
+                    <li class="list-2">2</li>
+                    <li class="list-2">3</li>
+                    <li class="list-2">4</li>
+                </ul>
+            </li>
+            <li class="list-1">
+                <a href="#">HTML+CSS</a>
+                <ul class="nav-2">
+                    <li class="list-2">1</li>
+                    <li class="list-2">2</li>
+                    <li class="list-2">3</li>
+                    <li class="list-2">4</li>
+                </ul>
+            </li>
+            <li class="list-1">
+                <a href="#">HTML+CSS</a>
+                <ul class="nav-2">
+                    <li class="list-2">1</li>
+                    <li class="list-2">2</li>
+                    <li class="list-2">3</li>
+                    <li class="list-2">4</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        
+        /* console.log(document.querySelectorAll('a')); */
+        var o_a = document.querySelectorAll('a');
+        var o_list = document.querySelectorAll('.list-1');
+
+        for(let i = 0; i < o_a.length; i++){
+            o_a[i].flag = true;
+            o_a[i].onclick = function(){
+                if(this.flag){
+                    for(let j = 0; j < o_a.length; j++){
+                        o_list[j].style.height = 40 + "px";
+                        o_a[j].flag = true;
+                    }
+                    o_list[i].style.height = 200 + "px";
+                }else{
+                    o_list[i].style.height = 40 + "px";
+                }
+                this.flag = !this.flag;
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>原生dom实现手风琴效果-jq22.com</title>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:100px;
+	height:0;
+	overflow:hidden;
+	transition:all .2s linear;
+	background-color:aquamarine;
+}
+.open+ul {
+	height:60px;
+	transition:all .2s linear;
+}
+</style>
+</head>
+<body>
+<div id="show">
+    <span class="open">按钮1</span>
+    <ul>
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+    </ul>
+    <br>
+    <span>按钮2</span>
+    <ul>
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+    </ul>
+    <br>
+    <span>按钮3</span>
+    <ul>
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+    </ul>
+
+
+</div>
+
+<script>
+var show = document.getElementById("show");
+var span = show.getElementsByTagName("span");
+//console.log(span);
+for (var i = 0; i < span.length; i++) {
+    span[i].onclick = function() {
+        if (this.className == "open") {
+            this.className = "";
+        } else if (this.className == "") {
+            for (var i = 0; i < span.length; i++) {
+                span[i].className = "";
+            }
+            this.className = "open";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
